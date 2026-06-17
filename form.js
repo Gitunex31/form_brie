@@ -192,6 +192,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('wf_key').value = atob(k);
     document.getElementById('wf_email').value = atob(m);
   });
-}
   }
 });
