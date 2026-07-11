@@ -28,7 +28,7 @@ app.use(cors({
 
 // 3. Middlewares obligatoires pour le JSON et les fichiers statiques
 app.use(express.json());
-app.use(express.static(__dirname)); // <-- AJOUT : Permet à Express de charger vos fichiers CSS, JS et images
+app.use(express.static(path.resolve(__dirname)));
 
 // 4. Initialisation de Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
