@@ -37,16 +37,19 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 // ROUTES VISUELLES (FRONTEND)
 // ==========================================
 
-// Afficher index.html à la racine du site
+// 1. Servir TOUS les fichiers statiques (CSS, JS, images)
+app.use(express.static(path.join(__dirname)));
+
+// 2. Afficher index.html à la racine du site
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Afficher form.html si l'utilisateur y va directement
-app.get('/form.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'form.html'));
+// 3. Route dynamique : si quelqu'un demande 'form.html' ou 'merci.html', Express lui envoie le bon fichier
+app.get('/:page.html', (req, res) => {
+    const page = req.params.page;
+    res.sendFile(path.join(__dirname, `${page}.html`));
 });
-
 // ==========================================
 // ROUTES API (BACKEND)
 // ==========================================
