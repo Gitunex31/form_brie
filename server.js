@@ -34,7 +34,7 @@ app.use(express.static(path.resolve(__dirname)));
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // ==========================================
-// ROUTES VISUELLES (FRONTEND)
+/* ROUTES VISUELLES (FRONTEND)
 // ==========================================
 
 // 1. Servir TOUS les fichiers statiques (CSS, JS, images)
@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
 app.get('/:page.html', (req, res) => {
     const page = req.params.page;
     res.sendFile(path.join(__dirname, `${page}.html`));
-});
+}); */ 
 // ==========================================
 // ROUTES API (BACKEND)
 // ==========================================
