@@ -347,3 +347,6 @@ window.addEventListener('click', () => {
   const dropdown = document.getElementById('lang-dropdown');
   if (dropdown) dropdown.classList.add('hidden');
 });
+
+// Exposer la fonction setLang globalement pour qu'elle réponde au clic du HTML
+window.setLang = setLang;
