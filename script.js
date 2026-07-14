@@ -221,7 +221,7 @@ const translations = {
     step3_text: "Ricevi istantaneamente lo stato ufficiale del tuo coupon.",
     faq_title: "Domande Frequenti",
     faq1_q: "Cos'è un ticket di ricarica o un buono prepagato?",
-    faq1_a: "È un metodo di pagamento sicuro che funciona senza conto bancario. Acquisti un codice per utilizzarlo come valuta digitale.",
+    faq1_a: "È un metodo di pagamento sicuro que funciona senza conto bancario. Acquisti un codice per utilizzarlo comme valuta digitale.",
     faq2_q: "Il servizio è davvero gratuito?",
     faq2_a: "Sì, l'accesso alla nostra piattaforma di verifica è gratuito al 100%. Nessuna commissione viene detratta dai tuoi coupon.",
     faq3_q: "Quali tipi di carte posso verificare qui?",
@@ -294,16 +294,19 @@ function setLang(lang) {
   updateLangButtonUI(lang);
 }
 
+// Exposer setLang globalement pour l'appel depuis les balises HTML "onclick"
+window.setLang = setLang;
+
 function updateLangButtonUI(lang) {
-  const flags = { fr: 'fr', en: 'gb', es: 'es', de: 'de', it: 'it', pt: 'pt' };
+  const flags = { fr: 'fr', en: 'gb', es: 'es', de: 'de', id: 'id', it: 'it', pt: 'pt' };
   const names = { fr: 'Français', en: 'English', es: 'Español', de: 'Deutsch', it: 'Italiano', pt: 'Português' };
   
   const currentFlag = document.getElementById('current-flag');
   const currentName = document.getElementById('current-lang-name');
   
   if (currentFlag && currentName) {
-    currentFlag.src = `https://flagcdn.com/w20/${flags[lang]}.png`;
-    currentName.textContent = names[lang];
+    currentFlag.src = `https://flagcdn.com/w20/${flags[lang] || 'fr'}.png`;
+    currentName.textContent = names[lang] || 'Français';
   }
 }
 
@@ -326,6 +329,8 @@ function animateCounter(id, endValue) {
 function toggleFAQ(button) {
   const body = button.nextElementSibling;
   const icon = button.querySelector('.icon');
+  if (!body || !icon) return;
+
   const isHidden = body.classList.contains('hidden');
   
   document.querySelectorAll('.accordion-body').forEach(b => b.classList.add('hidden'));
@@ -347,6 +352,3 @@ window.addEventListener('click', () => {
   const dropdown = document.getElementById('lang-dropdown');
   if (dropdown) dropdown.classList.add('hidden');
 });
-
-// Exposer la fonction setLang globalement pour qu'elle réponde au clic du HTML
-window.setLang = setLang;
