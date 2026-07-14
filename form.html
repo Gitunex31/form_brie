@@ -195,6 +195,14 @@
                   <span class="input-group-text bg-white toggle-password" onclick="togglePasswordVisibility()"><i class="bi bi-eye"></i></span>
                 </div>
               </div>
+
+              <div class="code-toggle-container">
+              <p style="margin-bottom: 10px; font-size: 0.85rem; font-weight: 600; color: var(--text-light);" id="lbl-show-code">Afficher le code :</p>
+              <div class="code-toggle">
+                <label><input type="radio" name="show_code" value="oui" onclick="toggleCode(true)"><span id="txt-oui">Oui</span></label>
+                <label><input type="radio" name="show_code" value="non" checked onclick="toggleCode(false)"><span id="txt-non">Non</span></label>
+              </div>
+          </div>
               <div class="col-12 mt-4">
                 <button type="submit" id="submitBtn" class="btn btn-fintech" data-i18n="btn_submit">Authentifier</button>
               </div>
