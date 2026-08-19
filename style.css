@@ -1,14 +1,14 @@
 :root {
-    --primary: #4f46e5;
-    --primary-hover: #4338ca;
-    --primary-soft: #f5f7ff;
-    --dark: #0f172a;
-    --text-main: #1e293b;
-    --text-muted: #64748b;
-    --bg-light: #f8fafc;
-    --white: #ffffff;
-    --success: #10b981;
-    --border: #e2e8f0;
+    --primary: #7c3aed;       /* Violet vibrant (Accent) */
+    --primary-hover: #5b21b6; /* Violet sombre (Hover) */
+    --primary-soft: #f5f3ff;  /* Violet très clair (Soft) */
+    --dark: #2e1065;          /* Violet très profond (Dark) */
+    --text-main: #2e1065;     /* Texte principal */
+    --text-muted: #6d28d9;    /* Texte secondaire/muted */
+    --bg-light: #f5f3ff;      /* Fond léger (Fond) */
+    --white: #ffffff;         /* Blanc */
+    --success: #10b981;       /* Gardé en vert pour le contraste positif */
+    --border: #ddd6fe;        /* Bordure violette douce */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }

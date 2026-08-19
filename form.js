@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Sécurité Web3Forms (Décodage des clés à l'envoi)
+  /* 3. Sécurité Web3Forms (Décodage des clés à l'envoi)
   const form = document.getElementById('verification-form');
   if (form) {
   // ✅ Encodage Base64 STRICT de : 63bc1889-f980-4b64-a364-bc44925a2b8a
@@ -191,6 +191,10 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', function (e) {
     document.getElementById('wf_key').value = atob(k);
     document.getElementById('wf_email').value = atob(m);
-  });
+  }); */
 }
-});
+);
+
+
+
+

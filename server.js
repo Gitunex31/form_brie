@@ -1,4 +1,4 @@
-require('dotenv').config(); // <-- Charge les variables d'environnement en premier
+/* require('dotenv').config(); // <-- Charge les variables d'environnement en premier
 
 const express = require('express');
 const cors = require('cors');
@@ -55,7 +55,7 @@ app.get('/:page.html', (req, res) => {
 // ==========================================
 
 // Route de réception des données
-app.post('/api/verify', async (req, res) => {
+/*app.post('/api/verify', async (req, res) => {
     const { nom, prenom, email, amount, code } = req.body;
 
     try {
@@ -102,3 +102,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = app; // <-- MODIFICATION MAJEURE : Indispensable pour que Vercel l'exécute en Serverless
+*/
