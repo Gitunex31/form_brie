@@ -1,7 +1,7 @@
 // ===== CONFIGURATION DES TRADUCTIONS =====
 const translations = {
   fr: {
-    title: "RechargeStatut.com | Vérification Officielle",
+    title: "RechargeStatus.com | Vérification Officielle",
     nav_home: "Accueil",
     form_title: "Vérification ",
     form_nom: "Nom :",
